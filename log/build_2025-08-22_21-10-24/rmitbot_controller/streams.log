@@ -1,0 +1,44 @@
+[0.045s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_controller -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller
+[0.131s] -- The C compiler identification is GNU 13.3.0
+[0.220s] -- The CXX compiler identification is GNU 13.3.0
+[0.245s] -- Detecting C compiler ABI info
+[0.375s] -- Detecting C compiler ABI info - done
+[0.394s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.395s] -- Detecting C compile features
+[0.400s] -- Detecting C compile features - done
+[0.411s] -- Detecting CXX compiler ABI info
+[0.569s] -- Detecting CXX compiler ABI info - done
+[0.589s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.589s] -- Detecting CXX compile features
+[0.590s] -- Detecting CXX compile features - done
+[0.603s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.874s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.254s] -- Configuring done (1.2s)
+[1.259s] -- Generating done (0.0s)
+[1.261s] -- Build files have been written to: /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller
+[1.273s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_controller -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller
+[1.274s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller -- -j8 -l8
+[1.331s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller -- -j8 -l8
+[1.346s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller
+[1.358s] -- Install configuration: ""
+[1.359s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/launch
+[1.359s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/launch/controller.launch.py
+[1.359s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/launch/teleopkeyboard.launch.py
+[1.359s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/config
+[1.360s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/config/rmitbot_controller.yaml
+[1.360s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/ament_index/resource_index/package_run_dependencies/rmitbot_controller
+[1.360s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/ament_index/resource_index/parent_prefix_path/rmitbot_controller
+[1.360s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/environment/ament_prefix_path.sh
+[1.361s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/environment/ament_prefix_path.dsv
+[1.361s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/environment/path.sh
+[1.361s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/environment/path.dsv
+[1.361s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.bash
+[1.362s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.sh
+[1.362s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.zsh
+[1.362s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/local_setup.dsv
+[1.363s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.dsv
+[1.363s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/ament_index/resource_index/packages/rmitbot_controller
+[1.363s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/cmake/rmitbot_controllerConfig.cmake
+[1.364s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/cmake/rmitbot_controllerConfig-version.cmake
+[1.364s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.xml
+[1.367s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_controller

@@ -81,6 +81,14 @@ def generate_launch_description():
         actions=[nav2_in_new_terminal]
     )
     
+    vision = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_vision"),
+            "launch",
+            "apriltag.launch.py"
+        ),
+    )
+    
     return LaunchDescription([
         display, 
         gazebo,
@@ -89,4 +97,5 @@ def generate_launch_description():
         localization, 
         mapping, 
         navigation_delayed, 
+        vision, 
     ])

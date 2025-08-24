@@ -1,0 +1,69 @@
+[0.039s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_description -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description
+[0.122s] -- The C compiler identification is GNU 13.3.0
+[0.209s] -- The CXX compiler identification is GNU 13.3.0
+[0.234s] -- Detecting C compiler ABI info
+[0.355s] -- Detecting C compiler ABI info - done
+[0.373s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.373s] -- Detecting C compile features
+[0.374s] -- Detecting C compile features - done
+[0.388s] -- Detecting CXX compiler ABI info
+[0.542s] -- Detecting CXX compiler ABI info - done
+[0.561s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.561s] -- Detecting CXX compile features
+[0.562s] -- Detecting CXX compile features - done
+[0.574s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.896s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.298s] -- Configuring done (1.2s)
+[1.305s] -- Generating done (0.0s)
+[1.308s] -- Build files have been written to: /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description
+[1.317s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_description -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description
+[1.318s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description -- -j8 -l8
+[1.377s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description -- -j8 -l8
+[1.379s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description
+[1.389s] -- Install configuration: ""
+[1.390s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes
+[1.390s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes/base_link.STL
+[1.414s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_front_link.STL
+[1.416s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes/laser_link.STL
+[1.426s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_left_link.STL
+[1.430s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes/wheel_right_link.STL
+[1.433s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes/caster_rear_link.STL
+[1.434s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/meshes/imu_link.STL
+[1.435s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf
+[1.435s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot.urdf.xacro
+[1.435s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_imu.xacro
+[1.436s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_gazebo.xacro
+[1.436s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_laser.xacro
+[1.436s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_platform.xacro
+[1.436s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_ros2_control.xacro
+[1.437s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/urdf/rmitbot_camera.xacro
+[1.438s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/launch
+[1.438s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/launch/gazebo.launch.py
+[1.438s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/launch/display.launch.py
+[1.438s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/rviz
+[1.438s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/rviz/display.rviz
+[1.438s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/world
+[1.438s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/world/room_8x8.world
+[1.439s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/models
+[1.439s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/models/apriltag_36h11_0
+[1.439s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/models/apriltag_36h11_0/model.config
+[1.439s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/models/apriltag_36h11_0/materials
+[1.439s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/models/apriltag_36h11_0/materials/textures
+[1.439s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/models/apriltag_36h11_0/materials/textures/tag36h11_0.png
+[1.440s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/models/apriltag_36h11_0/model.sdf
+[1.440s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/ament_index/resource_index/package_run_dependencies/rmitbot_description
+[1.440s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/ament_index/resource_index/parent_prefix_path/rmitbot_description
+[1.440s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/environment/ament_prefix_path.sh
+[1.440s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/environment/ament_prefix_path.dsv
+[1.440s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/environment/path.sh
+[1.441s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/environment/path.dsv
+[1.441s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/local_setup.bash
+[1.441s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/local_setup.sh
+[1.441s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/local_setup.zsh
+[1.441s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/local_setup.dsv
+[1.441s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.dsv
+[1.441s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/ament_index/resource_index/packages/rmitbot_description
+[1.442s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/cmake/rmitbot_descriptionConfig.cmake
+[1.442s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/cmake/rmitbot_descriptionConfig-version.cmake
+[1.442s] -- Installing: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.xml
+[1.462s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_description

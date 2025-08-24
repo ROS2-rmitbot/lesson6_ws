@@ -1,0 +1,1 @@
+/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision/ament_cmake_environment_hooks/local_setup.bash

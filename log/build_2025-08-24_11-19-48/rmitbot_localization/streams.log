@@ -1,0 +1,36 @@
+[0.136s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization
+[0.193s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.081s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.136s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.360s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.430s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.589s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.716s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.293s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.752s] -- Configuring done (2.6s)
+[2.759s] -- Generating done (0.0s)
+[2.762s] -- Build files have been written to: /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization
+[2.869s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization
+[2.869s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization -- -j8 -l8
+[2.984s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization -- -j8 -l8
+[2.986s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization
+[3.008s] -- Install configuration: ""
+[3.012s] -- Execute custom install script
+[3.013s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/launch/localization.launch.py
+[3.036s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/config/ekf.yaml
+[3.058s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/ament_index/resource_index/package_run_dependencies/rmitbot_localization
+[3.080s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/ament_index/resource_index/parent_prefix_path/rmitbot_localization
+[3.100s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/environment/ament_prefix_path.sh
+[3.125s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/environment/ament_prefix_path.dsv
+[3.149s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/environment/path.sh
+[3.172s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/environment/path.dsv
+[3.191s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.bash
+[3.207s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.sh
+[3.233s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.zsh
+[3.256s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/local_setup.dsv
+[3.280s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.dsv
+[3.298s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/ament_index/resource_index/packages/rmitbot_localization
+[3.323s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/cmake/rmitbot_localizationConfig.cmake
+[3.343s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/cmake/rmitbot_localizationConfig-version.cmake
+[3.362s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.xml
+[3.388s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_localization

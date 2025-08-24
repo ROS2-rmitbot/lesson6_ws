@@ -21,7 +21,6 @@
       </attenuation>
     </light>
 
-
     <!-- Simple floor: no Fuel dependency -->
     <model name="floor">
       <static>true</static>

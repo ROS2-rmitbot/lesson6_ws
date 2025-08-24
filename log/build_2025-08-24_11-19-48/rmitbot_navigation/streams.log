@@ -1,0 +1,32 @@
+[0.106s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation
+[0.172s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.997s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.365s] -- Configuring done (1.2s)
+[1.396s] -- Generating done (0.0s)
+[1.409s] -- Build files have been written to: /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation
+[1.420s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation
+[1.427s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation -- -j8 -l8
+[1.686s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation -- -j8 -l8
+[1.730s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation
+[1.759s] -- Install configuration: ""
+[1.763s] -- Execute custom install script
+[1.764s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/launch/nav.launch.py
+[1.801s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/launch/twistmux.launch.py
+[1.839s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/config/nav2_params.yaml
+[1.901s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/config/twistmux.yaml
+[1.954s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/ament_index/resource_index/package_run_dependencies/rmitbot_navigation
+[2.017s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/ament_index/resource_index/parent_prefix_path/rmitbot_navigation
+[2.053s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/ament_prefix_path.sh
+[2.084s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/ament_prefix_path.dsv
+[2.112s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/path.sh
+[2.162s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/path.dsv
+[2.207s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.bash
+[2.251s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.sh
+[2.303s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.zsh
+[2.348s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.dsv
+[2.389s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.dsv
+[2.423s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/ament_index/resource_index/packages/rmitbot_navigation
+[2.470s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/cmake/rmitbot_navigationConfig.cmake
+[2.526s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/cmake/rmitbot_navigationConfig-version.cmake
+[2.579s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.xml
+[2.642s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation

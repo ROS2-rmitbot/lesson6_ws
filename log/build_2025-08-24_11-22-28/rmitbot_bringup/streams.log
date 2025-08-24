@@ -1,0 +1,29 @@
+[0.065s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_bringup -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup
+[0.082s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.409s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.581s] -- Configuring done (0.5s)
+[0.585s] -- Generating done (0.0s)
+[0.588s] -- Build files have been written to: /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup
+[0.599s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_bringup -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup
+[0.600s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup -- -j8 -l8
+[0.664s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup -- -j8 -l8
+[0.666s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup
+[0.678s] -- Install configuration: ""
+[0.680s] -- Execute custom install script
+[0.681s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/launch/rmitbot.launch.py
+[0.681s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/ament_index/resource_index/package_run_dependencies/rmitbot_bringup
+[0.681s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/ament_index/resource_index/parent_prefix_path/rmitbot_bringup
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/environment/ament_prefix_path.sh
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/environment/ament_prefix_path.dsv
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/environment/path.sh
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/environment/path.dsv
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/local_setup.bash
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/local_setup.sh
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/local_setup.zsh
+[0.682s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/local_setup.dsv
+[0.682s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.dsv
+[0.690s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/ament_index/resource_index/packages/rmitbot_bringup
+[0.691s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/cmake/rmitbot_bringupConfig.cmake
+[0.691s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/cmake/rmitbot_bringupConfig-version.cmake
+[0.691s] -- Up-to-date symlink: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.xml
+[0.726s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_bringup

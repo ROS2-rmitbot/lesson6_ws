@@ -1,0 +1,30 @@
+[0.116s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_vision -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision
+[1.390s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.390s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.557s] -- Configuring done (1.4s)
+[1.595s] -- Generating done (0.0s)
+[1.603s] -- Build files have been written to: /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision
+[1.627s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_vision -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision
+[1.628s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision -- -j8 -l8
+[1.821s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision -- -j8 -l8
+[1.824s] Invoking command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision
+[1.864s] -- Install configuration: ""
+[1.865s] -- Execute custom install script
+[1.865s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/launch/apriltag.launch.py
+[1.907s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/config/apriltag_params.yaml
+[1.966s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/ament_index/resource_index/package_run_dependencies/rmitbot_vision
+[2.004s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/ament_index/resource_index/parent_prefix_path/rmitbot_vision
+[2.040s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/environment/ament_prefix_path.sh
+[2.093s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/environment/ament_prefix_path.dsv
+[2.133s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/environment/path.sh
+[2.170s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/environment/path.dsv
+[2.213s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/local_setup.bash
+[2.266s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/local_setup.sh
+[2.325s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/local_setup.zsh
+[2.367s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/local_setup.dsv
+[2.408s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.dsv
+[2.446s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/ament_index/resource_index/packages/rmitbot_vision
+[2.501s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/cmake/rmitbot_visionConfig.cmake
+[2.540s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/cmake/rmitbot_visionConfig-version.cmake
+[2.594s] -- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.xml
+[2.701s] Invoked command in '/home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_vision

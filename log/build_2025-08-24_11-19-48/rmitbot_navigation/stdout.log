@@ -1,0 +1,26 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/v120506/rmitbot_v3/lesson6_ws/build/rmitbot_navigation
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/launch/nav.launch.py
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/launch/twistmux.launch.py
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/config/nav2_params.yaml
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/config/twistmux.yaml
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/ament_index/resource_index/package_run_dependencies/rmitbot_navigation
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/ament_index/resource_index/parent_prefix_path/rmitbot_navigation
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/ament_prefix_path.sh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/ament_prefix_path.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/path.sh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/environment/path.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.bash
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.sh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.zsh
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/local_setup.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.dsv
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/ament_index/resource_index/packages/rmitbot_navigation
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/cmake/rmitbot_navigationConfig.cmake
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/cmake/rmitbot_navigationConfig-version.cmake
+-- Symlinking: /home/v120506/rmitbot_v3/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.xml

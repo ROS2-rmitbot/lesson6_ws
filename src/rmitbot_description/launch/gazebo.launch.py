@@ -41,7 +41,8 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             [os.path.join(get_package_share_directory("ros_gz_sim"), "launch"), "/gz_sim.launch.py"]),
         launch_arguments={
-            "gz_args": f"-r -v 4 {world_path}"
+            # "gz_args": f"-r -v 4 {world_path}"
+            "gz_args": f"-r -v 4 --render-engine ogre {world_path}"
         }.items()
     )
     
@@ -52,6 +53,20 @@ def generate_launch_description():
         output="screen",
         arguments=["-topic", "robot_description","-name", "rmitbot"],
     )
+    
+    # Spawn AprilTag
+    spawn_tag = Node(
+        package="ros_gz_sim",
+        executable="create",
+        output="screen",
+        arguments=[
+            "-file", os.path.join(pkg_path, "models", "apriltag_36h11_0", "model.sdf"),
+            # "-name", "tag0", 
+            "-name", "apriltag_36h11_0",
+            # "-x", "3.8", "-y", "0", "-z", "0.2",
+            # "-R", "0", "-P", "1.5708", "-Y", "0"   # pitch 90° → vertical tag
+    ],
+)
 
     # Bridge between ROS2 and Gazebo
     gz_ros2_bridge = Node(
@@ -60,8 +75,10 @@ def generate_launch_description():
         arguments=[ "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock", 
                     "/imu@sensor_msgs/msg/Imu[gz.msgs.IMU", 
                     "/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan",
-                    "/camera/image@sensor_msgs/msg/Image@gz.msgs.Image", 
-                    "/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo", 
+                    # "/camera/image@sensor_msgs/msg/Image@gz.msgs.Image", 
+                    # "/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo", 
+                    "/camera/image@sensor_msgs/msg/Image[gz.msgs.Image",
+                    "/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo", 
                     ], 
         remappings=[('/imu', '/imu/out')], 
     )
@@ -70,5 +87,6 @@ def generate_launch_description():
         gz_resource_path,
         gazebo,
         gz_spawn_entity,
+        spawn_tag, 
         gz_ros2_bridge,
     ])
