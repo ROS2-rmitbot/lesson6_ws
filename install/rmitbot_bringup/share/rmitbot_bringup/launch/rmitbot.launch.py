@@ -1,1 +1,103 @@
-/home/v120506/rmitbot_v3/lesson6_ws/src/rmitbot_bringup/launch/rmitbot.launch.py
+import os
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription, TimerAction, RegisterEventHandler, ExecuteProcess
+from ament_index_python.packages import get_package_share_directory
+from launch.event_handlers import OnProcessExit
+
+# Launch the file
+# ros2 launch rmitbot_bringup rmitbot.launch.py
+
+def generate_launch_description():
+    
+    # Launch rviz
+    display = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_description"),
+            "launch",
+            "display.launch.py"
+        ),
+    )
+    
+    # Launch gazebo
+    gazebo = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_description"),
+            "launch",
+            "gazebo.launch.py"
+        ),
+    )
+    
+    # Launch the controller manager
+    controller = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_controller"),
+            "launch",
+            "controller.launch.py"
+        ),
+    )
+    
+    # Launch the controller manager 3s after gazebo, to make sure the robot has spawned in simulation
+    controller_delayed = TimerAction(
+        period = 3., 
+        actions=[controller]
+    )
+    
+    # Launch the twistmux instead of keyboard node only
+    twistmux = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_navigation"),
+            "launch",
+            "twistmux.launch.py"
+        ),
+    )
+    
+    localization = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_localization"),
+            "launch",
+            "localization.launch.py"
+        ),
+    )
+    
+    # Launch the mapping node
+    mapping = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_mapping"),
+            "launch",
+            "slam.launch.py"
+        ),
+    )
+    
+    navigation = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_navigation"),
+            "launch",
+            "nav.launch.py"
+        ),
+    )
+    
+    
+    # Launch the navigation 10s after slamtoolbox, to make sure that a map is available
+    navigation_delayed = TimerAction(
+        period = 5., 
+        actions=[navigation]
+    )
+    
+    vision = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("rmitbot_vision"),
+            "launch",
+            "apriltag.launch.py"
+        ),
+    )
+    
+    return LaunchDescription([
+        display, 
+        gazebo,
+        controller_delayed, 
+        twistmux,
+        localization, 
+        mapping, 
+        navigation_delayed, 
+        vision, 
+    ])

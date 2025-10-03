@@ -16,8 +16,8 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     
     # Path to the controller config file
-    pkg_path = get_package_share_directory("rmitbot_controller")
-    robot_controllers = os.path.join(pkg_path, 
+    ctrl_pkg_path = get_package_share_directory("rmitbot_controller")
+    ctrl_config_file = os.path.join(ctrl_pkg_path, 
                              'config', 
                              'rmitbot_controller.yaml')
 
@@ -34,13 +34,9 @@ def generate_launch_description():
         package="controller_manager",
         executable="spawner",
         arguments=[
-            'mecanum_drive_controller',
-            '--param-file',
-            robot_controllers,
-            '--controller-ros-args',
-            '-r /mecanum_drive_controller/tf_odometry:=/tf',
-            '--controller-ros-args',
-            '-r /mecanum_drive_controller/reference:=/rmitbot_controller/cmd_vel',
+            'mecanum_drive_controller','--param-file',ctrl_config_file,
+            '--controller-ros-args','-r /mecanum_drive_controller/tf_odometry:=/tf',
+            '--controller-ros-args','-r /mecanum_drive_controller/reference:=/rmitbot_controller/cmd_vel',
         ],
         parameters=[{'use_sim_time': True}], 
     )
