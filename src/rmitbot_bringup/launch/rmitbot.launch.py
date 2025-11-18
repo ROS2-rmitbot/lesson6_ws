@@ -9,31 +9,33 @@ from launch.event_handlers import OnProcessExit
 
 def generate_launch_description():
     
+    # Path to the package 
+    pkg_path_description =  get_package_share_directory("rmitbot_description")
+    pkg_path_controller =   get_package_share_directory("rmitbot_controller")
+    pkg_path_localization = get_package_share_directory("rmitbot_localization")
+    pkg_path_mapping = get_package_share_directory("rmitbot_mapping")
+    pkg_path_navigation = get_package_share_directory("rmitbot_navigation")
+    pkg_path_vision = get_package_share_directory("rmitbot_vision")
+
     # Launch rviz
     display = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_description"),
-            "launch",
-            "display.launch.py"
-        ),
+        os.path.join(pkg_path_description,"launch","display.launch.py"),
     )
     
     # Launch gazebo
     gazebo = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_description"),
-            "launch",
-            "gazebo.launch.py"
-        ),
+        os.path.join(pkg_path_description, "launch", "gazebo.launch.py"),
     )
     
     # Launch the controller manager
     controller = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_controller"),
-            "launch",
-            "controller.launch.py"
-        ),
+        os.path.join(pkg_path_controller,"launch","controller.launch.py"),
+    )
+    
+    # Launch the controller manager 3s after gazebo, to make sure the robot has spawned in simulation
+    controller_delayed = TimerAction(
+        period = 3., 
+        actions=[controller]
     )
     
     # Launch the controller manager 3s after gazebo, to make sure the robot has spawned in simulation
@@ -51,44 +53,34 @@ def generate_launch_description():
         ),
     )
     
+    # Launch ekf node
     localization = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_localization"),
-            "launch",
-            "localization.launch.py"
-        ),
+        os.path.join(pkg_path_localization,"launch","localization.launch.py"),
     )
     
     # Launch the mapping node
     mapping = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_mapping"),
-            "launch",
-            "slam.launch.py"
-        ),
+        os.path.join(pkg_path_mapping,"launch","mapping.launch.py"),
     )
+        
+    # Launch the twistmux instead of keyboard node only
+    twistmux = IncludeLaunchDescription(
+        os.path.join(pkg_path_navigation,"launch","twistmux.launch.py"),
+    )
+
     
     navigation = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_navigation"),
-            "launch",
-            "nav.launch.py"
-        ),
+        os.path.join(pkg_path_navigation,"launch","nav.launch.py"),
     )
-    
     
     # Launch the navigation 10s after slamtoolbox, to make sure that a map is available
     navigation_delayed = TimerAction(
-        period = 5., 
+        period = 10., 
         actions=[navigation]
     )
     
     vision = IncludeLaunchDescription(
-        os.path.join(
-            get_package_share_directory("rmitbot_vision"),
-            "launch",
-            "apriltag.launch.py"
-        ),
+        os.path.join(pkg_path_vision, "launch","apriltag.launch.py"),
     )
     
     return LaunchDescription([

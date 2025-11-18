@@ -16,17 +16,25 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     
     # Path to the controller config file
-    ctrl_pkg_path = get_package_share_directory("rmitbot_controller")
-    ctrl_config_file = os.path.join(ctrl_pkg_path, 
-                             'config', 
-                             'rmitbot_controller.yaml')
+    pkg_path_controller = get_package_share_directory("rmitbot_controller")
+    config_controller = os.path.join(pkg_path_controller, 'config', 'rmitbot_controller.yaml')
+
+    # Path to the package
+    pkg_path_description = get_package_share_directory("rmitbot_description")
+    urdf_path = os.path.join(pkg_path_description, 'urdf', 'rmitbot.urdf.xacro')
+    robot_description = ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
+    # Publish the robot static TF from the urdf
+    robot_state_publisher = Node(
+        package=    'robot_state_publisher',
+        executable= 'robot_state_publisher',
+        parameters=[{"robot_description": robot_description}]
+        )
 
     # joint_state_broadcaster (jsb): dynamic TF of the motor joints 
     joint_state_broadcaster_spawner = Node(
-        package='controller_manager',
-        executable='spawner',
-        arguments=['joint_state_broadcaster'],
-        parameters=[{'use_sim_time': True}], 
+        package=    'controller_manager',
+        executable= 'spawner',
+        arguments=[ 'joint_state_broadcaster'],
     )
     
     # controller: IK from Cartesian speed to motor speed command
@@ -34,9 +42,11 @@ def generate_launch_description():
         package="controller_manager",
         executable="spawner",
         arguments=[
-            'mecanum_drive_controller','--param-file',ctrl_config_file,
-            '--controller-ros-args','-r /mecanum_drive_controller/tf_odometry:=/tf',
-            '--controller-ros-args','-r /mecanum_drive_controller/reference:=/rmitbot_controller/cmd_vel',
+            'mecanum_drive_controller','--param-file', config_controller,
+            '--controller-ros-args', '-r mecanum_drive_controller/tf_odometry:=tf',
+            '--controller-ros-args', '-r mecanum_drive_controller/reference:=cmd_vel',
+            '--controller-ros-args', '-r mecanum_drive_controller/odometry:=odom',
+            '--controller-ros-args', '-r mecanum_drive_controller/controller_state:=controller_state',
         ],
         parameters=[{'use_sim_time': True}], 
     )
@@ -51,6 +61,7 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
+            robot_state_publisher, 
             joint_state_broadcaster_spawner,
             controller_spawner_after_jsb,
         ]

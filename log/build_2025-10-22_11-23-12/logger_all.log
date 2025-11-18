@@ -1,0 +1,511 @@
+[0.188s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.188s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x788324f9ade0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7883250e5970>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7883250e5970>>, mixin_verb=('build',))
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.260s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/v120506/rmitbot_v4/lesson6_ws'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_bringup) by extension 'ros'
+[0.313s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmitbot_bringup' with type 'ros.ament_cmake' and name 'rmitbot_bringup'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_controller) by extension 'ros'
+[0.314s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmitbot_controller' with type 'ros.ament_cmake' and name 'rmitbot_controller'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_description) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmitbot_description' with type 'ros.ament_cmake' and name 'rmitbot_description'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_localization) by extension 'ros'
+[0.317s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmitbot_localization' with type 'ros.ament_cmake' and name 'rmitbot_localization'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_mapping) by extension 'ros'
+[0.319s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmitbot_mapping' with type 'ros.ament_cmake' and name 'rmitbot_mapping'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_navigation) by extension 'ros'
+[0.321s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmitbot_navigation' with type 'ros.ament_cmake' and name 'rmitbot_navigation'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmitbot_vision) by extension 'ros'
+[0.323s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmitbot_vision' with type 'ros.ament_cmake' and name 'rmitbot_vision'
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.323s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.360s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/v120506/rmitbot_v4/lesson6_ws/install
+[0.364s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 444 installed packages in /opt/ros/jazzy
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.456s] DEBUG:colcon.colcon_core.verb:Building package 'rmitbot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup', 'merge_install': False, 'path': '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'cmake_args' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'cmake_target' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.456s] DEBUG:colcon.colcon_core.verb:Building package 'rmitbot_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller', 'merge_install': False, 'path': '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_controller', 'symlink_install': False, 'test_result_base': None}
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'cmake_args' from command line to 'None'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'cmake_target' from command line to 'None'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.457s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.457s] DEBUG:colcon.colcon_core.verb:Building package 'rmitbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description', 'merge_install': False, 'path': '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_description', 'symlink_install': False, 'test_result_base': None}
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'cmake_args' from command line to 'None'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'cmake_target' from command line to 'None'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.458s] DEBUG:colcon.colcon_core.verb:Building package 'rmitbot_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization', 'merge_install': False, 'path': '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_localization', 'symlink_install': False, 'test_result_base': None}
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'cmake_args' from command line to 'None'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'cmake_target' from command line to 'None'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.458s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.459s] DEBUG:colcon.colcon_core.verb:Building package 'rmitbot_mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping', 'merge_install': False, 'path': '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_mapping', 'symlink_install': False, 'test_result_base': None}
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.459s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.460s] DEBUG:colcon.colcon_core.verb:Building package 'rmitbot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation', 'merge_install': False, 'path': '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'cmake_args' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'cmake_target' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.460s] Level 5:colcon.colcon_core.verb:set package 'rmitbot_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.460s] DEBUG:colcon.colcon_core.verb:Building package 'rmitbot_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision', 'merge_install': False, 'path': '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_vision', 'symlink_install': False, 'test_result_base': None}
+[0.460s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.462s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.462s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_bringup' with build type 'ament_cmake'
+[0.463s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_bringup'
+[0.466s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.466s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.466s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.475s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_controller' with build type 'ament_cmake'
+[0.475s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_controller'
+[0.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.475s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.484s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_description' with build type 'ament_cmake'
+[0.484s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_description'
+[0.484s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.484s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.493s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_localization' with build type 'ament_cmake'
+[0.493s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_localization'
+[0.494s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.494s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.502s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_mapping' with build type 'ament_cmake'
+[0.502s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_mapping'
+[0.502s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.502s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.509s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_navigation' with build type 'ament_cmake'
+[0.510s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_navigation'
+[0.510s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.519s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_vision' with build type 'ament_cmake'
+[0.520s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/v120506/rmitbot_v4/lesson6_ws/src/rmitbot_vision'
+[0.520s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.520s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup -- -j8 -l8
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller -- -j8 -l8
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description -- -j8 -l8
+[0.548s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization -- -j8 -l8
+[0.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping -- -j8 -l8
+[0.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation -- -j8 -l8
+[0.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision -- -j8 -l8
+[0.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup -- -j8 -l8
+[0.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup
+[0.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description -- -j8 -l8
+[0.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description
+[0.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller -- -j8 -l8
+[0.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller
+[0.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping -- -j8 -l8
+[0.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping
+[0.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation -- -j8 -l8
+[0.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation
+[0.677s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_controller)
+[0.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_controller
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller' for CMake module files
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller' for CMake config files
+[0.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_controller', 'cmake_prefix_path')
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/hook/cmake_prefix_path.ps1'
+[0.695s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/hook/cmake_prefix_path.dsv'
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/hook/cmake_prefix_path.sh'
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/bin'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/lib/pkgconfig/rmitbot_controller.pc'
+[0.703s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/lib/python3.12/site-packages'
+[0.703s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/bin'
+[0.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.ps1'
+[0.705s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.dsv'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.sh'
+[0.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.bash'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.zsh'
+[0.709s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/colcon-core/packages/rmitbot_controller)
+[0.710s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_controller)
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller' for CMake module files
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller' for CMake config files
+[0.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_controller', 'cmake_prefix_path')
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/hook/cmake_prefix_path.ps1'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/hook/cmake_prefix_path.dsv'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/hook/cmake_prefix_path.sh'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/bin'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/lib/pkgconfig/rmitbot_controller.pc'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/lib/python3.12/site-packages'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/bin'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.ps1'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.dsv'
+[0.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.sh'
+[0.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.bash'
+[0.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/rmitbot_controller/package.zsh'
+[0.718s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_controller/share/colcon-core/packages/rmitbot_controller)
+[0.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_bringup)
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup' for CMake module files
+[0.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_bringup
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup' for CMake config files
+[0.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_bringup', 'cmake_prefix_path')
+[0.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/hook/cmake_prefix_path.ps1'
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/hook/cmake_prefix_path.dsv'
+[0.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/hook/cmake_prefix_path.sh'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/bin'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/lib/pkgconfig/rmitbot_bringup.pc'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/lib/python3.12/site-packages'
+[0.726s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/bin'
+[0.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.ps1'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.dsv'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.sh'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.bash'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.zsh'
+[0.729s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/colcon-core/packages/rmitbot_bringup)
+[0.729s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_bringup)
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup' for CMake module files
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup' for CMake config files
+[0.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_bringup', 'cmake_prefix_path')
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/hook/cmake_prefix_path.ps1'
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/hook/cmake_prefix_path.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/hook/cmake_prefix_path.sh'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/bin'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/lib/pkgconfig/rmitbot_bringup.pc'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/lib/python3.12/site-packages'
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/bin'
+[0.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.ps1'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.dsv'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.sh'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.bash'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/rmitbot_bringup/package.zsh'
+[0.738s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_bringup/share/colcon-core/packages/rmitbot_bringup)
+[0.740s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_mapping)
+[0.740s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping' for CMake module files
+[0.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_mapping
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping' for CMake config files
+[0.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_mapping', 'cmake_prefix_path')
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/hook/cmake_prefix_path.ps1'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/hook/cmake_prefix_path.dsv'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/hook/cmake_prefix_path.sh'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/bin'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/lib/pkgconfig/rmitbot_mapping.pc'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/lib/python3.12/site-packages'
+[0.746s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/bin'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.ps1'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.dsv'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.sh'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.bash'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.zsh'
+[0.749s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/colcon-core/packages/rmitbot_mapping)
+[0.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_mapping)
+[0.750s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping' for CMake module files
+[0.750s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping' for CMake config files
+[0.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_mapping', 'cmake_prefix_path')
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/hook/cmake_prefix_path.ps1'
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/hook/cmake_prefix_path.dsv'
+[0.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/hook/cmake_prefix_path.sh'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/bin'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/lib/pkgconfig/rmitbot_mapping.pc'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/lib/python3.12/site-packages'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/bin'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.ps1'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.dsv'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.sh'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.bash'
+[0.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/rmitbot_mapping/package.zsh'
+[0.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_mapping/share/colcon-core/packages/rmitbot_mapping)
+[0.758s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_description)
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description' for CMake module files
+[0.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_description
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description' for CMake config files
+[0.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_description', 'cmake_prefix_path')
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/hook/cmake_prefix_path.ps1'
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/hook/cmake_prefix_path.dsv'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/hook/cmake_prefix_path.sh'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/bin'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/lib/pkgconfig/rmitbot_description.pc'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/lib/python3.12/site-packages'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.dsv'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.sh'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.bash'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.zsh'
+[0.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/colcon-core/packages/rmitbot_description)
+[0.768s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_description)
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description' for CMake module files
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description' for CMake config files
+[0.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_description', 'cmake_prefix_path')
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/hook/cmake_prefix_path.ps1'
+[0.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/hook/cmake_prefix_path.dsv'
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/hook/cmake_prefix_path.sh'
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/bin'
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/lib/pkgconfig/rmitbot_description.pc'
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/lib/python3.12/site-packages'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/bin'
+[0.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.ps1'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.dsv'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.sh'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.bash'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/rmitbot_description/package.zsh'
+[0.778s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_description/share/colcon-core/packages/rmitbot_description)
+[0.778s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_navigation)
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation' for CMake module files
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation' for CMake config files
+[0.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_navigation
+[0.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_navigation', 'cmake_prefix_path')
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/hook/cmake_prefix_path.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/hook/cmake_prefix_path.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/hook/cmake_prefix_path.sh'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/bin'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/lib/pkgconfig/rmitbot_navigation.pc'
+[0.784s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/lib/python3.12/site-packages'
+[0.784s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/bin'
+[0.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.ps1'
+[0.785s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.dsv'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.sh'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.bash'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.zsh'
+[0.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/colcon-core/packages/rmitbot_navigation)
+[0.788s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_navigation)
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation' for CMake module files
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation' for CMake config files
+[0.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_navigation', 'cmake_prefix_path')
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/hook/cmake_prefix_path.ps1'
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/hook/cmake_prefix_path.dsv'
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/hook/cmake_prefix_path.sh'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/bin'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/lib/pkgconfig/rmitbot_navigation.pc'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/lib/python3.12/site-packages'
+[0.794s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/bin'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.ps1'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.dsv'
+[0.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.sh'
+[0.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.bash'
+[0.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/rmitbot_navigation/package.zsh'
+[0.797s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_navigation/share/colcon-core/packages/rmitbot_navigation)
+[0.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision -- -j8 -l8
+[0.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision
+[0.816s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_vision)
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision' for CMake module files
+[0.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_vision
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision' for CMake config files
+[0.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_vision', 'cmake_prefix_path')
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/hook/cmake_prefix_path.ps1'
+[0.819s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/hook/cmake_prefix_path.dsv'
+[0.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/hook/cmake_prefix_path.sh'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/bin'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/lib/pkgconfig/rmitbot_vision.pc'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/lib/python3.12/site-packages'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/bin'
+[0.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.sh'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.bash'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.zsh'
+[0.823s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/colcon-core/packages/rmitbot_vision)
+[0.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_vision)
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision' for CMake module files
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision' for CMake config files
+[0.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_vision', 'cmake_prefix_path')
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/hook/cmake_prefix_path.ps1'
+[0.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/hook/cmake_prefix_path.dsv'
+[0.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/hook/cmake_prefix_path.sh'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/bin'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/lib/pkgconfig/rmitbot_vision.pc'
+[0.828s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/lib/python3.12/site-packages'
+[0.828s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/bin'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.ps1'
+[0.830s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.dsv'
+[0.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.sh'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.bash'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/rmitbot_vision/package.zsh'
+[0.832s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_vision/share/colcon-core/packages/rmitbot_vision)
+[1.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization -- -j8 -l8
+[1.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization
+[1.530s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_localization)
+[1.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/v120506/rmitbot_v4/lesson6_ws/build/rmitbot_localization
+[1.530s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization' for CMake module files
+[1.531s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization' for CMake config files
+[1.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_localization', 'cmake_prefix_path')
+[1.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/hook/cmake_prefix_path.ps1'
+[1.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/hook/cmake_prefix_path.dsv'
+[1.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/hook/cmake_prefix_path.sh'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/bin'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/lib/pkgconfig/rmitbot_localization.pc'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/lib/python3.12/site-packages'
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/bin'
+[1.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.ps1'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.dsv'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.sh'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.bash'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.zsh'
+[1.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/colcon-core/packages/rmitbot_localization)
+[1.538s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmitbot_localization)
+[1.538s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization' for CMake module files
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization' for CMake config files
+[1.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmitbot_localization', 'cmake_prefix_path')
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/hook/cmake_prefix_path.ps1'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/hook/cmake_prefix_path.dsv'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/hook/cmake_prefix_path.sh'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/bin'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/lib/pkgconfig/rmitbot_localization.pc'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/lib/python3.12/site-packages'
+[1.542s] Level 1:colcon.colcon_core.environment:checking '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/bin'
+[1.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.ps1'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.dsv'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.sh'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.bash'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/rmitbot_localization/package.zsh'
+[1.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/v120506/rmitbot_v4/lesson6_ws/install/rmitbot_localization/share/colcon-core/packages/rmitbot_localization)
+[1.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.545s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.554s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.554s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.554s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.574s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.574s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/v120506/rmitbot_v4/lesson6_ws/install/local_setup.ps1'
+[1.576s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/v120506/rmitbot_v4/lesson6_ws/install/_local_setup_util_ps1.py'
+[1.578s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/v120506/rmitbot_v4/lesson6_ws/install/setup.ps1'
+[1.580s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/v120506/rmitbot_v4/lesson6_ws/install/local_setup.sh'
+[1.581s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/v120506/rmitbot_v4/lesson6_ws/install/_local_setup_util_sh.py'
+[1.582s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/v120506/rmitbot_v4/lesson6_ws/install/setup.sh'
+[1.584s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/v120506/rmitbot_v4/lesson6_ws/install/local_setup.bash'
+[1.584s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/v120506/rmitbot_v4/lesson6_ws/install/setup.bash'
+[1.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/v120506/rmitbot_v4/lesson6_ws/install/local_setup.zsh'
+[1.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/v120506/rmitbot_v4/lesson6_ws/install/setup.zsh'

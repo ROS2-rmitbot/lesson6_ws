@@ -13,16 +13,16 @@ from launch.substitutions import LaunchConfiguration
 def generate_launch_description():
     
     teleop_keyboard = Node(
-        package='teleop_twist_keyboard',
-        executable='teleop_twist_keyboard',
-        name='teleop_twist_keyboard',
-        output='screen',
-        prefix='xterm -e',
+        package=    'teleop_twist_keyboard',
+        executable= 'teleop_twist_keyboard',
+        name=       'teleop_twist_keyboard',
+        output=     'screen',
+        prefix=     'xterm -e',
         parameters=[
             {"use_sim_time": True},
             {'stamped': True}], 
-        remappings=[
-            ('cmd_vel', '/rmitbot_controller/cmd_vel')]
+        # remappings=[
+        #     ('cmd_vel', '/rmitbot_controller/cmd_vel')]
     )         
     
     return LaunchDescription(
